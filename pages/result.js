@@ -1,28 +1,21 @@
 import Head from 'next/head'
 import { 
     Input,
-    Center,
     Container, 
     Button,
     HStack,
     Heading,
     Box,
     Image,
-    Badge,
     VStack,
 } from '@chakra-ui/react'
 
 export default function Home() {
-    const property = {
+    const result = {
         imageUrl: 'https://i.pinimg.com/originals/ba/b3/a5/bab3a5e4bf5075ac5a86e5923acdc9b9.png',
         imageAlt: 'Oregairu',
-        beds: 3,
-        baths: 2,
         title: 'My Youth Romantic Comedy Is Wrong, As I Expected',
-        formattedPrice: '$1,900.00',
-        reviewCount: 34,
-        rating: 4,
-      }
+    }
 
     return (
     <div>
@@ -40,7 +33,7 @@ export default function Home() {
 
                 <Box borderWidth='1px' borderRadius='lg' overflow='wrap'>
                     <HStack>
-                        <Image src={property.imageUrl} alt={property.imageAlt} height="100px" />
+                        <Image src={result.imageUrl} alt={result.imageAlt} height="100px" />
                         <Box p='6'>
                             <Box
                                 mt='1'
@@ -49,14 +42,12 @@ export default function Home() {
                                 lineHeight='tight'
                                 isTruncated
                             >
-                                {property.title}
+                                {result.title}
                             </Box>
                         </Box>
                     </HStack>
                 </Box>
             </VStack>
-
-
         </Container>
     </div>
     )
