@@ -7,7 +7,7 @@ import {
   HStack
 } from '@chakra-ui/react'
 
-export default function Home() {
+export default function SearchPage() {
   return (
     <div>
       <Head>

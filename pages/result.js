@@ -10,7 +10,7 @@ import {
     VStack,
 } from '@chakra-ui/react'
 
-export default function Home() {
+export default function ResultPage() {
     const result = {
         imageUrl: 'https://i.pinimg.com/originals/ba/b3/a5/bab3a5e4bf5075ac5a86e5923acdc9b9.png',
         imageAlt: 'Oregairu',

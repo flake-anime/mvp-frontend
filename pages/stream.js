@@ -5,7 +5,7 @@ import {
     VStack,
 } from '@chakra-ui/react'
 
-export default function Home() {
+export default function StreamingPage() {
     return (
     <div>
         <Head>
