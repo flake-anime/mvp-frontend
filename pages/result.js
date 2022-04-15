@@ -9,6 +9,7 @@ import {
     Image,
     VStack,
 } from '@chakra-ui/react'
+import SearchResult from '../components/search_result'
 
 export default function ResultPage() {
     const result = {
@@ -28,25 +29,8 @@ export default function ResultPage() {
                     <Input placeholder="Search" />
                     <Button>Search</Button>
                 </HStack>
-                
                 <Heading as="h5" size="sm">Search Result</Heading>
-
-                <Box borderWidth='1px' borderRadius='lg' overflow='wrap'>
-                    <HStack>
-                        <Image src={result.imageUrl} alt={result.imageAlt} height="100px" />
-                        <Box p='6'>
-                            <Box
-                                mt='1'
-                                fontWeight='semibold'
-                                as='h4'
-                                lineHeight='tight'
-                                isTruncated
-                            >
-                                {result.title}
-                            </Box>
-                        </Box>
-                    </HStack>
-                </Box>
+                <SearchResult image_url={result.imageUrl} image_alt={result.imageAlt} title={result.title} />
             </VStack>
         </Container>
     </div>
